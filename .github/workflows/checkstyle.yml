@@ -1,0 +1,19 @@
+name: Validating team agreements
+
+on:
+  pull_request:
+    types: [ opened, synchronize ]
+
+jobs:
+  team-agreements-validation:
+    name: Validating team agreements
+    runs-on: ubuntu-latest
+
+    steps:
+       - uses: actions/checkout@v4
+       - uses: dberna2/check-style@main
+         with:
+           github_token: "${{ secrets.GITHUB_TOKEN }}"
+           reporter: github-pr-review
+           level: info
+           checkstyle_config: checkstyle-java-google-style.xml
