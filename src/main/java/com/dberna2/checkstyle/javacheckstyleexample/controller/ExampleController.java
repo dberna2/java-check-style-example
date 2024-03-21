@@ -8,6 +8,6 @@ public class ExampleController {
 
   @GetMapping
   public String hello() {
-    return "Hi!";
+    return "Hi from rest controller!";
   }
 }
