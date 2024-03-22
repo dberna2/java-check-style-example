@@ -45,17 +45,17 @@
     <property name="message" value="Multiple empty lines."/>
   </module>
 
-    <module name="NoLineWrap"/>
+  <module name="NoLineWrap"/>
 
-    <module name="NeedBraces"/>
+  <module name="NeedBraces"/>
 
-    <module name="WhitespaceAfter">
-      <property name="tokens" value="COMMA"/>
-    </module>
+  <module name="WhitespaceAfter">
+    <property name="tokens" value="COMMA"/>
+  </module>
 
-    <module name="MethodName">
-      <message key="name.invalidPattern"
-        value="Method name ''{0}'' must match pattern ''{1}''."/>
-      <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
-    </module>
+  <module name="MethodName">
+    <message key="name.invalidPattern"
+      value="Method name ''{0}'' must match pattern ''{1}''."/>
+    <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
+  </module>
 </module>
