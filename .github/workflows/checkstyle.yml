@@ -9,7 +9,9 @@ jobs:
     name: Validating team agreements
     runs-on: ubuntu-latest
     permissions:
-      packages: write
+      contents: write
+      pull-requests: write
+      repository-projects: write
 
     steps:
        - uses: actions/checkout@v4
