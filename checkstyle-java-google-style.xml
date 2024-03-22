@@ -22,16 +22,6 @@
     <property name="onCommentFormat" value="@formatter:on"/>
   </module>
 
-  <module name="FileTabCharacter">
-    <property name="eachLine" value="true"/>
-  </module>
-
-  <module name="RegexpSingleline">
-    <property name="format"
-      value="(\s+$(?&lt;!\s*?\*\s))"/> <!--added regexp to skip empty javadoc lines, which caused a lot of trivial, non-fixable violations-->
-    <property name="message" value="Line with trailing whitespaces."/>
-  </module>
-
   <module name="RegexpSingleline">
     <property name="fileExtensions" value="json, properties, proto, sql, xml, wsdl, yaml, yml"/>
     <property name="format" value="^(?!(\s{2})*(\S|$|\s\*))"/>
@@ -44,8 +34,6 @@
     <property name="format" value="^(?:\r\n|\r|\n)^$"/>
     <property name="message" value="Multiple empty lines."/>
   </module>
-
-  <module name="NeedBraces"/>
 
   <module name="WhitespaceAfter">
     <property name="tokens" value="COMMA"/>
