@@ -15,11 +15,10 @@ public class RepositoryImplementationCheck extends AbstractCheck {
 
   @Override
   public void visitToken(final DetailAST ast) {
-    DetailAST classNameAST = ast.findFirstToken(TokenTypes.IDENT);
-    String className = classNameAST.getText();
+    final DetailAST classNameAST = ast.findFirstToken(TokenTypes.IDENT);
+    final String className = classNameAST.getText();
 
-    // Obtener la lista de interfaces que la clase implementa
-    DetailAST implementsClause = ast.findFirstToken(TokenTypes.IMPLEMENTS_CLAUSE);
+    final DetailAST implementsClause = ast.findFirstToken(TokenTypes.IMPLEMENTS_CLAUSE);
 
     if (implementsClause != null && className.endsWith("Impl")) {
       log(ast.getLineNo(), "Class implementing an interface should not end with 'Impl': {0}", className);
