@@ -32,4 +32,4 @@ jobs:
            custom_validations: java-check-style-validations/target/java-check-style-validations-0.0.1-SNAPSHOT.jar
            reporter: github-pr-review
            level: info
-           checkstyle_config: ./java-check-style-rest/src/main/resources/checkstyle-java-google-style.xml
+           checkstyle_config: ./java-check-style-rest/src/main/resources/checkstyle-style.xml.xml
