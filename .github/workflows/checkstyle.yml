@@ -16,8 +16,9 @@ jobs:
     steps:
        - uses: actions/checkout@v4
        - uses: dberna2/check-style@main
+         working-directory: ./java-check-style-rest
          with:
            github_token: "${{ secrets.GITHUB_TOKEN }}"
            reporter: github-pr-review
            level: info
-           checkstyle_config: checkstyle-java-google-style.xml
+           checkstyle_config: src/main/resources/checkstyle-java-google-style.xml
