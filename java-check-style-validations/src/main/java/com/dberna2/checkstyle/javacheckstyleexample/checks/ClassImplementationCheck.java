@@ -1,12 +1,10 @@
-package com.dberna2.checkstyle.javacheckstyleexample.checkstyle;
+package com.dberna2.checkstyle.javacheckstyleexample.checks;
 
-import com.puppycrawl.tools.checkstyle.FileStatefulCheck;
-import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
+import com.puppycrawl.tools.checkstyle.api.*;
 
-@FileStatefulCheck
-public class RepositoryImplementationCheck extends AbstractCheck {
+public class ClassImplementationCheck extends AbstractCheck {
 
   @Override
   public int[] getDefaultTokens() {
@@ -28,11 +26,6 @@ public class RepositoryImplementationCheck extends AbstractCheck {
   @Override
   public int[] getAcceptableTokens() {
     return getDefaultTokens();
-  }
-
-  @Override
-  public boolean isCommentNodesRequired() {
-    return false;
   }
 
   @Override
