@@ -28,7 +28,7 @@ jobs:
        - uses: dberna2/check-style@main
          with:
            github_token: "${{ secrets.GITHUB_TOKEN }}"
-           use_custom_validations: true
+           use_custom_validations: false
            custom_validations: java-check-style-validations/target/java-check-style-validations-0.0.1-SNAPSHOT.jar
            reporter: github-pr-review
            level: info
