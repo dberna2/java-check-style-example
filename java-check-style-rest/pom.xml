@@ -13,6 +13,10 @@
   <name>java-check-style-rest</name>
   <description>java-check-style-rest</description>
 
+  <properties>
+    <checkstyle-maven-plugin.version>3.5.0</checkstyle-maven-plugin.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -38,9 +42,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>${checkstyle-maven-plugin.version}</version>
         <configuration>
-          <configLocation>
-            src/main/resources/checkstyle-java-google-style.xml
-          </configLocation>
+          <configLocation>src/main/resources/checkstyle-style.xml</configLocation>
           <sourceDirectories>
             <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
             <sourceDirectory>${project.build.testSourceDirectory}</sourceDirectory>

@@ -17,5 +17,4 @@ public class ExampleController {
   public String hello__controller() {
     return helloRepository.hello();
   }
-
 }
