@@ -4,7 +4,7 @@ import com.dberna2.checkstyle.javacheckstyleexample.repository.HelloRepository;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloRepositoryImpl implements HelloRepository {
+public class HelloRepositoryTestImpl implements HelloRepository {
 
   @Override
   public String hello() {
