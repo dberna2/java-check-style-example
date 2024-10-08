@@ -1,5 +1,6 @@
-package com.dberna2.checkstyle.javacheckstyleexample.repository;
+package com.dberna2.checkstyle.javacheckstyleexample.repository.impl;
 
+import com.dberna2.checkstyle.javacheckstyleexample.repository.HelloRepository;
 import org.springframework.stereotype.Component;
 
 @Component
